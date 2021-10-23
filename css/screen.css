@@ -7,3 +7,9 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
+
+html {
+  font-size: 22px;
+  line-height: 26px;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode","Lucida Sans", Tahoma, sans-serif;
+}

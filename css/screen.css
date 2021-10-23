@@ -8,8 +8,34 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/* Base Styles */
+
 html {
   font-size: 22px;
   line-height: 26px;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode","Lucida Sans", Tahoma, sans-serif;
+  padding: 26px;
 }
+
+h1,
+h2,
+h3,
+p,
+nav {
+  padding-bottom: 26px;
+}
+
+/* Layout Styles */
+
+/* Module Styles */
+#course-list-short {
+  padding-bottom: 26px;
+}
+
+#site-footer > p {
+  padding-bottom: 0;
+}
+
+/* State Styles */
+
+/* Theme Styles */

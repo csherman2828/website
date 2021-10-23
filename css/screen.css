@@ -8,13 +8,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* Begin site styles below */
 
+/*
+  Modular Scale: https://www.modularscale.com/?22&px&1.333
+*/
+
 /* Base Styles */
 
 html {
   font-size: 22px;
-  line-height: 26px;
+  line-height: 28px;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode","Lucida Sans", Tahoma, sans-serif;
-  padding: 26px;
+  padding: 28px;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -22,20 +30,61 @@ h2,
 h3,
 p,
 nav {
-  padding-bottom: 26px;
+  padding-bottom: 28px;
+}
+
+h1 {
+  font-size: 69.461px;
+  line-height: 84px;
+}
+
+h2 {
+ font-size: 39.092px;
+ line-height: 56px;
+}
+
+h3 {
+  font-weight: bold;
 }
 
 /* Layout Styles */
 
 /* Module Styles */
 #course-list-short {
-  padding-bottom: 26px;
+  padding-bottom: 28px;
 }
 
 #site-footer > p {
   padding-bottom: 0;
 }
 
+article.course-listing {
+  padding-bottom: 28px;
+}
+
 /* State Styles */
 
 /* Theme Styles */
+
+/** A quick baseline grid overlay using css+svg. Inspired by [Basehold.it](https://basehold.it/). @author leshido */
+.g body {
+  position: relative;
+}
+
+.g body::after {
+  background: url('data:image/svg+xml;utf8,<svg height="28" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
+  content: "";
+  display: block;
+  pointer-events:
+  none; top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9999;
+  position:
+  absolute;
+}
+
+.g body:active::after {
+  display: none;
+}

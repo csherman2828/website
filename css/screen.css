@@ -25,6 +25,12 @@ a {
   text-decoration: none;
 }
 
+header#site-header {
+  background-color: #CCC;
+  margin: -28px -28px 0 -28px;
+  padding: 28px 28px 0 28px;
+}
+
 h1,
 h2,
 h3,

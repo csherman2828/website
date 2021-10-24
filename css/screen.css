@@ -30,8 +30,13 @@ a {
 
 header#site-header {
   background-color: #CCC;
+  color: #111;
   margin: -28px -28px 0 -28px;
   padding: 28px 28px 0 28px;
+}
+
+header#site-header a {
+  color: #111;
 }
 
 h1,

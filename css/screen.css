@@ -57,7 +57,7 @@ h3 {
 header#site-header {
   background-color: #3e487a;
   color: #DDD;
-  margin: -28px -28px 0 -28px;
+  margin: -28px -28px 28px -28px;
   padding: 28px 28px 0 28px;
 }
 

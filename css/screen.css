@@ -39,7 +39,11 @@ nav {
 
 /* don't add padding to nested lists */
 ul li:last-child ul {
-  padding-bottom: 0px;
+  padding-bottom: 0;
+}
+
+nav ul {
+  padding-bottom: 0;
 }
 
 h1 {

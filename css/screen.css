@@ -16,6 +16,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 22px;
+  background-color: #EEE;
   line-height: 28px;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode","Lucida Sans", Tahoma, sans-serif;
   color: #333;

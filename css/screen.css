@@ -31,7 +31,6 @@ a {
 
 h1,
 h2,
-h4,
 p,
 ul,
 nav {
@@ -65,6 +64,7 @@ h3 {
 
 h4 {
   font-weight: bold;
+  line-height: 56px;
 }
 
 /* Layout Styles */

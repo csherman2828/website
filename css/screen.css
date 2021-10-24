@@ -91,6 +91,31 @@ header#site-header a {
   padding-bottom: 0;
 }
 
+.work-exp-description li,
+.project-description li,
+.extracurricular-description li,
+.course-skills li,
+.useful-links li,
+#resume-languages li,
+#resume-technologies li {
+  margin-left: 28px;
+  list-style: disc;
+  line-height: 27.5px;
+}
+
+.work-exp-description li,
+.project-description li,
+.extracurricular-description li {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.work-exp-details li,
+.project-details li,
+.extracurricular-details li {
+  font-size: 16.504px;
+}
+
 /* State Styles */
 
 @media screen and (min-width: 320px) {

@@ -23,7 +23,9 @@ html {
 }
 
 a {
-  text-decoration: none;
+  color: #333;
+  text-decoration: underline; /* This works for all browsers */
+  text-decoration: underline solid #AAA 1px; /* if supported, quiets the line */
 }
 
 header#site-header {

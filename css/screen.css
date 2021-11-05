@@ -16,15 +16,15 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
   font-size: 22px;
-  background-color: #EEE;
+  background-color: #444;
   line-height: 28px;
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
-  color: #333;
+  color: #EEE;
   padding: 28px;
 }
 
 a {
-  color: #333;
+  color: #EEE;
   text-decoration: underline; /* This works for all browsers */
   text-decoration-color: #AAA; /* Additional intrinsic styles */
   text-decoration-style: solid;
@@ -102,7 +102,7 @@ h4 {
 
 #site-header {
   text-align: center;
-  background-color: #3e487a;
+  background-color: #222;
   color: #DDD;
   margin: -28px -28px 28px -28px;
   padding: 28px 28px 0 28px;

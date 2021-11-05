@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 /* stylelint-disable*/
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section{display:block}html,.stylelint{line-height:1}body{line-height:inherit}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 /* stylelint-enable */
 
 /* Begin site styles below */
@@ -18,7 +18,7 @@ html {
   font-size: 22px;
   background-color: #EEE;
   line-height: 28px;
-  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode","Lucida Sans", Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   color: #333;
   padding: 28px;
 }
@@ -26,7 +26,9 @@ html {
 a {
   color: #333;
   text-decoration: underline; /* This works for all browsers */
-  text-decoration: underline solid #AAA 1px; /* if supported, quiets the line */
+  text-decoration-color: #AAA; /* Additional intrinsic styles */
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
 }
 
 h1,
@@ -37,12 +39,12 @@ nav {
   padding-bottom: 28px;
 }
 
-/* don't add padding to nested lists */
-ul li:last-child ul:last-child {
+nav ul {
   padding-bottom: 0;
 }
 
-nav ul {
+/* don't add padding to nested lists */
+ul li:last-child ul:last-child {
   padding-bottom: 0;
 }
 
@@ -52,8 +54,8 @@ h1 {
 }
 
 h2 {
- font-size: 69.461px;
- line-height: 84px;
+  font-size: 69.461px;
+  line-height: 84px;
 }
 
 h3 {
@@ -75,29 +77,11 @@ h4 {
 
 /* Module Styles */
 
-header#site-header{
-  text-align: center;
-  background-color: #3e487a;
-  color: #DDD;
-  margin: -28px -28px 28px -28px;
-  padding: 28px 28px 0 28px;
-}
-
-header#site-header a {
-  color: #DDD;
-}
-
-#site-footer p {
-  padding-bottom: 0;
-}
-
 .work-exp-description li,
 .project-description li,
 .extracurricular-description li,
 .course-skills li,
-.useful-links li,
-#resume-languages li,
-#resume-technologies li {
+.useful-links li {
   margin-left: 28px;
   list-style: disc;
   line-height: 27.5px;
@@ -106,14 +90,37 @@ header#site-header a {
 .work-exp-description li,
 .project-description li,
 .extracurricular-description li {
-    padding-top: 14px;
-    padding-bottom: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .work-exp-details li,
 .project-details li,
 .extracurricular-details li {
   font-size: 16.504px;
+}
+
+#site-header {
+  text-align: center;
+  background-color: #3e487a;
+  color: #DDD;
+  margin: -28px -28px 28px -28px;
+  padding: 28px 28px 0 28px;
+}
+
+#site-header a {
+  color: #DDD;
+}
+
+#site-footer p {
+  padding-bottom: 0;
+}
+
+#resume-languages li,
+#resume-technologies li {
+  margin-left: 28px;
+  list-style: disc;
+  line-height: 27.5px;
 }
 
 /* State Styles */
@@ -143,14 +150,13 @@ header#site-header a {
   background: url('data:image/svg+xml;utf8,<svg height="28" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(255, 0, 0, 0.3)" /></svg>') repeat top left;
   content: "";
   display: block;
-  pointer-events:
-  none; top: 0;
+  pointer-events: none;
+  top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 9999;
-  position:
-  absolute;
+  position: absolute;
 }
 
 .g body:active::after {

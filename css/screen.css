@@ -116,6 +116,21 @@ h4 {
   padding-bottom: 0;
 }
 
+#site-index {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 28px;
+}
+
+#site-index header {
+  flex: 0 0 100%;
+}
+
+#site-index section {
+  flex: 1 0 370px;
+}
+
 #resume-languages li,
 #resume-technologies li {
   margin-left: 28px;

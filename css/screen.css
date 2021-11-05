@@ -120,7 +120,7 @@ h4 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  column-gap: 28px;
+  column-gap: 56px;
 }
 
 #site-index header {
@@ -129,6 +129,21 @@ h4 {
 
 #site-index section {
   flex: 1 0 370px;
+}
+
+#classes main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  column-gap: 56px;
+}
+
+#classes main header {
+  flex: 0 0 100%;
+}
+
+#classes main article {
+  flex: 1 0 500px;
 }
 
 #resume-languages li,
